@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #22215B;
+    background-image: url('./assets/desk-background.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic{
+    height: 200px;
+    width:  200px;
+    margin-top: 50px;
+}
+
+.profile h1{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.profile h2{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
+.skills{
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.text{
+    font-size: 24px;
+    font-weight: 300;
+    list-style-type: none;
+    position: relative;
+    top:0;
+    animation: slide 7.5s steps(5) infinite;
+}
+@keyframes slide{
+    100%{
+        top:-150px;
+    }
+}
+.text span{
+    position: relative;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.text span::after{
+    position: absolute;
+    left: 0px;
+    content: "";
+    height: 30px;
+    width: 100%;
+    background-color: #22215B;
+    border-left: 2px solid white;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing{
+    40%, 60%{
+        left: calc(100%);
+      }
+      100%{
+        left: 0;
+      }
+}
+
+.linktree{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linktree a{
+    width: 40%;
+    min-width: 280px;
+}
+
+.button{
+    font-size: 27px;
+    padding: 10px;
+    background: rgba( 0, 0, 0, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6px );
+-webkit-backdrop-filter: blur( 6px );
+border-radius: 10px;
+    border-radius: 10px;    
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    height: 40px;
+    margin-right: 10px;
+}
+
+.button:hover{
+    font-size: 27px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #2E3192;
+    transition: all 0.1s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width:698px){
+    body{
+        background-image: url('./assets/mob-background.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .profile{
+        width: 50%;
+        margin: auto;
+    }
+    .profile-pic{
+        height: 150px;
+        width: 150px;
+        margin-top: 50px;
+    }
+    .profile h1{
+        font-size: 24px;
+    }
+    
+    .profile h2{
+        font-size: 15px;
+    }
+    .button{
+        font-size: 24px;
+    }
+    .button:hover{
+        font-size: 24px;
+    }
+    .icons{
+        height: 38px;
+        margin-right: 10px;
+    }
+}
+@media only screen and (max-width:410px){
+    .profile h1{
+        font-size: 20px;
+    }
+    
+    .profile h2{
+        font-size: 15px;
+    }
+    .button{
+        font-size: 20px;
+    }
+    .button:hover{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:330px){
+    .profile h1{
+        font-size: 18px;
+    }
+    
+    .profile h2{
+        font-size: 13px;
+    }
+    .button{
+        font-size: 18px;
+    }
+    .button:hover{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:1487px) {
+    body{
+        background-image: url('./assets/desk-background.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+  
